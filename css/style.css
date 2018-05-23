@@ -232,7 +232,8 @@ img {
     position: absolute;
     right: .2rem;
     bottom: .05rem;
-    font-size: .4rem; }
+    font-size: .5rem;
+    letter-spacing: 2px; }
 
 .js-b {
   margin: .15rem auto;
