@@ -136,16 +136,22 @@ img {
   line-height: 1.6;
   tr {
     th {
-      width: 50%;
       line-height: 2;
       text-align: left;
       color: #626456;
       font-size: .22rem;
       border-bottom: 1px solid #b1b49d;
+      &:first-child{
+        width: 70%;
+      }
     }
     td {
+      white-space: nowrap;
       color: #646658;
       font-size: .22rem;
+      span{
+        margin-left: .3rem;
+      }
     }
   }
 }
