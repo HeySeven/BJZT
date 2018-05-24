@@ -516,4 +516,9 @@ img {
       -moz-border-radius: 0.06rem;
       border-radius: 0.06rem; }
 
+#hd {
+  display: inline-block;
+  text-align: center;
+  min-width: .8rem; }
+
 /*# sourceMappingURL=style.css.map */
