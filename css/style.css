@@ -185,9 +185,22 @@ img {
     padding-bottom: .8rem; }
 
 .video-box {
+  position: relative;
   background-color: #000000; }
   .video-box video {
     display: block; }
+  .video-box .video-drop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    background: url(../images/video-img.jpg) center no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; }
 
 .img-box img {
   display: block; }
