@@ -66,7 +66,7 @@
                             <td>洁具：<span id="count-10">168146</span></td>
                         </tr>
                     </table>
-                    <div class="table-dis">最新优惠活动：？？？？元</div>
+                    <div class="table-dis">最新优惠活动：<span id="hd">0</span>元</div>
                 </div>
             </div>
             <div class="js-form">
@@ -302,6 +302,24 @@
         }, 200);
 
 
+        var ran = 100;
+        var range = 50000;
+        var myNumber;
+
+        /*将产生随机数的方法进行封装*/
+        function sjs(range) {
+            ran = Math.random() * range;//[0,range)的随机数
+            var result = parseInt(ran);//将数字转换成整数
+            return result;
+        }
+
+        /*对显示随机数的方法进行封装*/
+        function showRandomNum() {
+            var figure = sjs(range);
+            $("#hd").text(figure);
+        }
+
+        myNumber = setInterval(showRandomNum, 100);//多长时间运行一次
     })
 </script>
 </body>
