@@ -90,7 +90,7 @@ img {
 }
 
 .content-box {
-  height: 11.29rem;
+  padding-bottom: .1rem;
   background: url(../images/content-box.jpg) 0 0 no-repeat;
   @include background-size(cover);
   overflow: hidden;
