@@ -1,0 +1,190 @@
+@charset "utf-8";
+/* Copyright 2015-2020 YeZhiFeng, Co.Ltd.*/
+@import "mixins";
+
+$color-danger: #ff0000;
+$color-success: #97d35f;
+$color-warning: #F9CF4B;
+$color-info: #5c93f7;
+$color-primary: #b69454;
+$color-normal: #333;
+$color-light: #999;
+$color-lighter: #aaa;
+$color-border: #ddd;
+
+$song: '宋体';
+/*reset style*/
+body {
+  -webkit-font-smoothing: antialiased;
+  font-family: "Microsoft Yahei", "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;
+}
+
+ol,
+ul {
+  list-style-type: none;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+a {
+  color: $color-normal;
+  outline: none;
+  @include transition(all .2s);
+}
+
+a:focus, a:hover {
+  color: $color-primary;
+  text-decoration: none;
+}
+
+dl,
+p {
+  margin-bottom: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+/*common style*/
+.auto-box {
+  @include clearfix();
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  height: 64px;
+  background-color: #000000;
+  img {
+    vertical-align: top;
+  }
+  .index-logo {
+    float: left;
+  }
+  .nav-list {
+    float: right;
+    @include clearfix();
+    li {
+      float: left;
+      line-height: 64px;
+      padding: 0 20px;
+      a {
+        font-size: 14px;
+        color: #ffffff;
+        &:hover {
+          color: #9f7e3f;
+        }
+      }
+    }
+  }
+  .top-right {
+    float: right;
+  }
+}
+
+.banner {
+  img {
+    display: block;
+    width: 100%;
+  }
+}
+
+.bj-form-wrap {
+  height: 935px;
+  background: url(../images/bj-form-wrap.jpg) center 0 no-repeat;
+}
+
+.bj-form-header {
+  text-align: center;
+  padding-bottom: 55px;
+  color: $color-normal;
+  h2 {
+    margin: 0;
+    padding: 60px 0 20px;
+    font-size: 42px;
+    color: rgb(51, 51, 51);
+    font-weight: bold;
+  }
+  p {
+    font-size: 22px;
+    span{
+      color: #ff0000;
+    }
+  }
+}
+
+.bj-form-body{
+  .form-group{
+    margin-bottom: 35px;
+    font-size: 22px;
+    color: $color-normal;
+    .control-label{
+      padding-top: 17px;
+      font-weight: normal;
+    }
+    .form-control{
+      font-size: 22px;
+      height: 64px;
+      padding: 15px;
+      background-color: transparent;
+      @include box-shadow(none);
+      @include border-radius(0);
+      border-color: #a0a0a0;
+      &:focus{
+        border-color: #000;
+      }
+    }
+    &.form-group-inline{
+      .form-control {
+        display: inline-block;
+        width: auto;
+        vertical-align: middle;
+      }
+      select.form-control{
+        min-width: 180px;
+        margin-right: 10px;
+        &+.radio-inline{
+          margin-left: 30px;
+        }
+      }
+      input[type=checkbox], input[type=radio]{
+        margin-top: 8px;
+      }
+      .desc{
+        margin-left: 15px;
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 16px;
+        color: #616161;
+        padding-top: 10px;
+      }
+    }
+    &.form-group-btn{
+      padding-top: 40px;
+      text-align: center;
+      .btn{
+        width: 955px;
+        margin: 0 auto;
+        font-size: 32px;
+        color: #ffffff;
+        font-weight: bold;
+        background-color: #9f7e3f;
+        padding: 9px 12px;
+      }
+      p{
+        padding-top: 20px;
+        font-size: 20px;
+        color: #999999;
+      }
+    }
+  }
+}
+
+.img-box{
+  img{
+    display: block;
+    width: 100%;
+  }
+}
+
